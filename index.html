@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCAntarWebsite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body class="min-h-screen flex flex-col">
+    <nav class="bg-[#ffffff] shadow fixed w-full top-0 left-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="assets/icons/logoarcant.JPEG" alt="Logo" class="h-12 w-12 rounded-full object-cover">
+                <span class="font-semibold text-[#0D2F4F]">ARC Antar</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 text-[#0D2F4F] font-medium">
+                <a href="#home" class="hover:text-[#F37321]">Home</a>
+                <a href="#services" class="hover:text-[#F37321]">Layanan</a>
+                <a href="#about" class="hover:text-[#F37321]">Tentang Kami</a>
+                <a href="#testimoni" class="hover:text-[#F37321]">Testimoni</a>
+                <a href="#contact" class="hover:text-[#F37321]">Kontak</a>
+            </div>
+            <button id="menu-btn" class="md:hidden text-gray-900 text-3xl focus:outline-none">
+                ☰
+            </button>
+            <div id="mobile-menu" 
+            class="hidden absolute top-16 left-0 w-full bg-white shadow-md flex flex-col text-[#0D2F4F] font-medium p-4 space-y-4 md:hidden">
+            <a href="#home" class="hover:text-[#F37321]">Home</a>
+            <a href="#services" class="hover:text-[#F37321]">Layanan</a>
+            <a href="#about" class="hover:text-[#F37321]">Tentang Kami</a>
+            <a href="#testimoni" class="hover:text-[#F37321]">Testimoni</a>
+            <a href="#contact" class="hover:text-[#F37321]">Kontak</a>
+        </div>
+        </div>
+    </div>
+    </nav>
+ 
+    <main class="flex-1 pt-20">
+    <section id="home" class="relative w-full min-h-[578px] md:min-h-[578px] bg-[#F9FAFB] flex flex-col md:flex-row items-center justify-center px-4 md:px-16">
+        <div class="flex-1 text-left">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            <span class="text-[#0D2F4F]">Butuh Jasa Angkut Barang? Kami Siap Bantu!</span>
+        </h1>
+            <p class="mt-4 text-gray-700 text-lg md:text-xl">
+            Melayani Area: Jawa Tengah - Jawa Timur - Yogyakarta
+            </p>
+            <p class="mt-4 text-gray-600 max-w-lg">
+            Pindahan rumah, kirim barang besar, atau angkut furniture jadi lebih mudah. 
+            ARC Antar siap melayani dengan cepat, aman, dan harga terjangkau.
+            </p>
+            <a href="https://wa.me/6281294858573" 
+                class="bg-[#F37321] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#EA580C] transition inline-block">
+                Pesan via WhatsApp
+            </a>
+        </div>
+            <div class="flex-1 w-full h-80 md:h-[578px] relative">
+            <img src="assets/images/pictruk1.png" class="absolute inset-0 w-900 h-900 object-cover">
+            </div>
+    </section>
+    <hr class="border-gray-300 my-10">
+
+    <section id="services" class="max-w-6xl mx-auto px-4 py-16">
+  
+  <h2 class="text-2xl font-bold text-[#0D2F4F] mb-4 text-center">
+    Layanan Kami
+  </h2>
+
+  <p class="text-gray-600 text-center mb-10">
+    Kami siap membantu berbagai kebutuhan angkut barang dengan layanan cepat, aman, dan terpercaya.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    
+    <div class="bg-white p-6 rounded-xl shadow-sm">
+      <h3 class="font-semibold text-lg mb-2">Pindahan Rumah</h3>
+      <p class="text-gray-600 text-sm">
+        Membantu proses pindahan rumah dengan aman dan efisien.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm">
+      <h3 class="font-semibold text-lg mb-2">Pengiriman Barang Besar</h3>
+      <p class="text-gray-600 text-sm">
+        Melayani pengangkutan barang besar seperti lemari dan kasur.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm">
+      <h3 class="font-semibold text-lg mb-2">Pindahan Kantor</h3>
+      <p class="text-gray-600 text-sm">
+        Solusi praktis untuk memindahkan peralatan kantor dengan cepat.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm">
+      <h3 class="font-semibold text-lg mb-2">Jasa Angkut Barang</h3>
+      <p class="text-gray-600 text-sm">
+        Siap membantu berbagai kebutuhan angkut barang dalam kota maupun antar kota.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm">
+      <h3 class="font-semibold text-lg mb-2">Pick Up & Delivery</h3>
+      <p class="text-gray-600 text-sm">
+        Layanan penjemputan dan pengantaran barang langsung ke tujuan.
+      </p>
+    </div>
+  </div>
+</section>
+    <hr class="border-gray-300 my-10">
+    
+    <section id="keunggulan" class="max-w-6xl mx-auto px-4 py-16">
+  <div class="grid md:grid-cols-2 gap-10 items-start">
+
+    <!-- Kiri -->
+    <div>
+      <h2 class="text-2xl font-bold text-[#0D2F4F] mb-4">
+        Kenapa Memilih Kami?
+      </h2>
+      <p class="text-gray-600">
+        Kami berkomitmen memberikan layanan terbaik dengan mengutamakan kecepatan, keamanan, dan kepuasan pelanggan.
+      </p>
+
+      <img src="assets/images/keunggulan.JPEG" 
+       alt="Layanan ARC Antar"
+       class="w-full max-w-sm rounded-lg shadow">
+    </div>
+
+    <!-- Kanan -->
+    <div class="space-y-6">
+
+      <div class="border-b pb-4">
+        <h3 class="font-semibold text-[#0D2F4F]">Cepat & Tepat Waktu</h3>
+        <p class="text-gray-600 text-sm">
+          Pengiriman dilakukan sesuai jadwal tanpa keterlambatan.
+        </p>
+      </div>
+
+      <div class="border-b pb-4">
+        <h3 class="font-semibold text-[#0D2F4F]">Aman & Terpercaya</h3>
+        <p class="text-gray-600 text-sm">
+          Barang ditangani dengan hati-hati oleh tenaga berpengalaman.
+        </p>
+      </div>
+
+      <div class="border-b pb-4">
+        <h3 class="font-semibold text-[#0D2F4F]">Harga Terjangkau</h3>
+        <p class="text-gray-600 text-sm">
+          Biaya kompetitif sesuai kualitas layanan yang diberikan.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-[#0D2F4F]">Pelayanan Ramah</h3>
+        <p class="text-gray-600 text-sm">
+          Respon cepat dan komunikasi mudah melalui WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="border-gray-300 my-10">
+
+<section id="about" class="max-w-4xl mx-auto px-4 py-16 text-center">
+  <h2 class="text-2xl font-bold text-[#0D2F4F] mb-4">
+    Tentang Kami
+  </h2>
+  <p class="text-gray-600 leading-relaxed mb-6">
+    ARC Antar adalah layanan jasa angkut barang yang melayani berbagai kebutuhan pengiriman, mulai dari pindahan rumah hingga pengangkutan barang besar. Kami hadir untuk memberikan solusi praktis, cepat, dan aman bagi setiap pelanggan.
+  </p>
+  <p class="text-gray-600 leading-relaxed">
+    Dengan tenaga berpengalaman dan pelayanan yang responsif, kami berkomitmen untuk menjaga setiap barang yang kami angkut agar sampai tujuan dengan selamat dan tepat waktu.
+  </p>
+</section>
+<hr class="border-gray-300 my-10">
+
+<section id="testimoni" class="py-16 px-4 max-w-6xl mx-auto">
+
+  <h2 class="text-2xl font-bold text-[#0D2F4F] text-center mb-10">
+    Apa Kata Pelanggan Kami
+  </h2>
+
+  <!-- TESTIMONI LIST -->
+  <div id="testimonialContainer" 
+       class="flex gap-6 overflow-x-auto scroll-smooth">
+  </div>
+
+  <!-- BUTTON (SELALU MUNCUL) -->
+  <button onclick="toggleForm()" 
+    class="mt-8 bg-[#0D2F4F] text-white px-5 py-2 rounded-lg block mx-auto">
+    Tulis Testimoni Anda
+  </button>
+
+  <!-- FORM (YANG DI HIDE) -->
+  <div id="formTestimoni" 
+       class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 mt-6">
+
+    <form class="space-y-4">
+
+      <input type="text" placeholder="Nama (boleh disamarkan)"
+        class="w-full border rounded-lg px-4 py-2" />
+
+      <textarea placeholder="Tulis pengalaman Anda..."
+        class="w-full border rounded-lg px-4 py-2"></textarea>
+
+      <select class="w-full border rounded-lg px-4 py-2">
+        <option>Rating</option>
+        <option>⭐⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐⭐</option>
+        <option>⭐⭐⭐</option>
+      </select>
+
+    <label class="flex items-center gap-2 text-sm text-gray-600">
+        <input type="checkbox" id="anonCheck" class="accent-[#F37321]">
+        Kirim sebagai anonim
+    </label>
+
+      <button class="bg-[#F37321] text-white px-4 py-2 rounded-lg">
+        Kirim Testimoni
+      </button>
+    </form>
+  </div>
+
+</section>
+<hr class="border-gray-300 my-10">
+
+    <section id="contact" class="max-w-4xl mx-auto px-4 py-16 text-center">
+
+  <h2 class="text-2xl font-bold text-[#0D2F4F] mb-4">
+    Butuh Jasa Angkut Barang?
+  </h2>
+
+  <p class="text-gray-600 mb-6">
+    Hubungi kami sekarang untuk layanan cepat, aman, dan terpercaya. Tim kami siap membantu kebutuhan Anda.
+  </p>
+
+  <a href="https://wa.me/6281294858573" 
+     class="bg-[#F37321] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#EA580C] transition inline-block">
+     Pesan via WhatsApp
+  </a>
+
+</section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6">
+    <p class="text-center text-sm">
+    © 2026 ARC Antar. All rights reserved. <br>
+    <span class="text-gray-400 text-xs">
+        Website by Marcellina Nova E.
+    </span>
+    </p>
+    </footer>
+
+    <div id="notifBox" style="display:none;"></div>
+
+    <div id="visitorPopup" class="fixed top-4 right-4 w-80 bg-white shadow-lg rounded-lg p-4 z-50 hidden">
+    <h3 class="text-lg font-semibold mb-2">Halo! Siapa Anda?</h3>
+    <form id="visitorForm" class="space-y-2">
+        <input type="text" name="name" placeholder="Nama Anda" 
+               class="w-full border p-2 rounded focus:ring focus:ring-yellow-300">
+        <input type="text" name="origin" placeholder="Asal Anda" 
+               class="w-full border p-2 rounded focus:ring focus:ring-yellow-300">
+        <input type="text" name="profession" placeholder="Profesi Anda" 
+               class="w-full border p-2 rounded focus:ring focus:ring-yellow-300">
+        <button type="submit" 
+                class="w-full bg-yellow-500 text-gray-900 py-2 rounded font-medium hover:bg-yellow-400 transition">
+            Submit
+        </button>
+    </form>
+</div>
+</body>
+<script src="js/main.js"></script>
+</html>
